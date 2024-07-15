@@ -4,8 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
-<body>
-    
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width:100vw;
+        margin: 0;
+    }
+    .gallery{
+        width:900px;
+        display: flex;
+        overflow-x: scroll;
+    }
+    .gallery div{
+        width:100%;
+        display: grid;
+        grid-template-columns:auto auto auto;
+        grid-gap: 20px;
+        padding: 10px;
+        flex: none;
+    }
+    .gallery div img{
+        width:100%;
+        filter: grayscale(100);
+    }
+    .gallery div img:hover{
+        transform: scale(1.1);
+        cursor: pointer;
+        filter: grayscale(0);
+    }
+    .gallery::-webkit-scrollbar{
+        display: none;
+    }
+    .gallery-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+ </style>
+
+<body> 
+    <div class="gallery-wrap">
+       <span > <i class="fa-solid fa-arrow-left" id="left-btn"></i></span>
+       <div class="gallery">
+        <div>
+            <img src="../src/assets/project-1.jpg"/>
+            <img src="../src/assets/project-2.jpg"/>
+            <img src="../src/assets/project-3.jpg"/>
+        </div>
+        <div>
+            <img src="../src/assets/project-4.jpg"/>
+            <img src="../src/assets/project-5.jpg"/>
+            <img src="../src/assets/project-6.jpg"/>
+        </div>
+    </div>
+    <span ><i class="fa-solid fa-arrow-right" id="right-btn"></i></span>
+    </div>
+    <script src="https://kit.fontawesome.com/4797e14a95.js" crossorigin="anonymous"></script> 
 </body>
+
+  <script>
+    const scrollContainer = document.querySelector('.gallery');
+    const leftBtn = document.querySelector('#left-btn');
+    const rightBtn = document.querySelector('#right-btn');
+
+    const scrollWidth = scrollContainer.scrollWidth;
+    const clientWidth = scrollContainer.clientWidth;
+
+    function scrollRight() {
+        if (scrollContainer.scrollLeft + clientWidth >= scrollWidth) {
+            scrollContainer.scrollLeft = 0;
+        } else {
+            scrollContainer.scrollLeft += 300; 
+        }
+    }
+
+    function scrollLeft() {
+        if (scrollContainer.scrollLeft <= 0) {
+            scrollContainer.scrollLeft = scrollWidth - clientWidth;
+        } else {
+            scrollContainer.scrollLeft -= 300; 
+        }
+    }
+
+    rightBtn.addEventListener('click', scrollRight);
+    leftBtn.addEventListener('click', scrollLeft);
+    setInterval(scrollRight, 2000);
+</script>
+   </script>
 </html>

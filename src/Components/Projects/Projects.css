@@ -1,0 +1,226 @@
+.Projects{
+    max-width: 1140px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.Projects .section-title{
+    color: #14bf98;
+}
+.Projects h3{
+    text-align: center;
+}
+.Projects .section-title{
+    text-align: center;
+}
+.Projects .grid ul{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+.Projects .grid ul li {
+    list-style: none;
+    max-width: 580px;
+}
+.grid-container{
+    display: grid;
+    grid-template-rows: 49% 49%;
+    grid-template-columns: 25% 25% 25% 0%;
+    margin-left: 9%;
+    overflow: hidden;
+}
+#SEO{
+    grid-template-rows: 100%;
+}
+.grid-container .grid-item{
+    width:580px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+.grid-container .grid-item img:hover{
+    transform: scale(1.2);
+    filter: grayscale(100%);
+    color: black;
+}
+.grid-container .grid-item:hover span {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.grid-container .grid-item img{
+    width:45%;
+    background-color: rgba(0, 0, 0, 0.4);
+    transition: transform 0.5s ease;
+    cursor: pointer;
+    object-fit: cover;
+}
+.grid-container .grid-item span{
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    background: transparent;
+    left: 47px;
+    bottom: 87px;
+	opacity: 0;
+}
+.Projects .grid button{
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background:#c1cace;
+    color: #787976;
+    padding-left: 5%;
+    background: transparent;
+    padding: 1rem 1.2rem;
+    border-radius: 0.8rem;
+}
+.Projects .grid button:hover{
+    color:#c1cace;
+    background-color: #14bf98;
+}
+.Projects .grid .present-button.show{
+    color:#c1cace;
+    background-color: #14bf98;
+}
+.team{
+    max-width: 1140px;
+    margin-top: 5%;
+}
+.team h4{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #484a46;
+}
+.team >p{
+    text-align: center;
+    font-size: 1.2rem;
+    color: #787976;
+    max-width: 52%;
+    margin: 0 auto;
+}
+.team .team-member-list-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s;
+}
+.team-member-list-item .job-title{
+    margin-bottom: 0.75rem;
+    color: #484a46;
+    font-weight: bolder;
+    font-size: 1rem;
+}
+.team-member-list-item .title{
+    color: #787976;
+    margin-bottom: 0.2rem;
+    font-size: 1.5rem;
+}
+.team-member-list-item img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.team-member-list-item .social-links{
+    display: flex;
+    flex-direction: row;
+    gap:12%;
+    align-items: center;
+    justify-content: center;
+
+}
+.team-member-list-item .team-content{
+    max-width: 60%;
+    text-align: center;
+}
+@media (min-width:1024px){
+    .Projects {
+        max-width: 1140px;
+        padding-right: 15px;
+        padding-left: 0px;
+        margin-right: auto;
+        margin-left: -8%px;
+    }
+}
+@media (max-width:768px){
+    .Projects .section-title{
+        margin-left:15%;
+    }
+    .Projects .grid{
+        max-width:100%;
+    }
+    .Projects .grid ul{
+        gap:0%;
+    }
+    .grid-container {
+        grid-template-rows: 23% 23% 23%;
+        grid-template-columns: 43% 41%;
+        overflow: hidden;
+    }
+    .grid-container .grid-item{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.5s ease, opacity 0.5s ease;
+    }
+    .team .team-member-list-container{
+        margin-left: 36%;
+        display: block;
+    }
+    .grid-container .grid-item img {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        transition: transform 0.5s ease;
+        cursor: pointer;
+        object-fit: cover;
+    }
+    
+    
+}
+@media (max-width:500px){
+    .Projects .grid ul{
+        flex-wrap: wrap;
+    }
+    .grid-container .grid-item {
+        width: 100%;
+    }
+    .grid-container .grid-item span{
+        font-size: 0.8rem;
+        background: transparent;
+        left: 8px;
+        bottom: 61px;
+    }
+    .grid-container .grid-item img {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        transition: transform 0.5s ease;
+        cursor: pointer;
+        object-fit: cover;
+    }
+    .grid-container {
+        grid-template-rows: 23% 23% 23%;
+        grid-template-columns: 43% 41%;
+        overflow: hidden;
+    }
+    .team .team-member-list-container{
+        margin-left: 12%;
+    }
+    .team-member-list-item .team-content{
+        max-width: 100%;
+    }
+    .Projects .grid li button{
+        font-size: 0.7rem;
+    }
+    .team .team-p{
+        max-width:100%;
+        margin-bottom: 3%;
+    }
+    .team >h4{
+        margin:7px;
+    }
+}

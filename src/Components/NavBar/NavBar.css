@@ -1,0 +1,84 @@
+.NavBar{
+    transition: background-color 0.4s ease-in-out;
+    width: 100%;
+    position: fixed;
+    top:0;
+    z-index:100;
+    scroll-behavior: smooth;
+}
+nav.scrolled{
+    background-color: #113448;
+	box-shadow: 0 0.0625rem 0.375rem 0 rgba(0, 0, 0, 0.1);
+    scroll-behavior: smooth;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 1rem 2rem;
+    color: white;
+    flex-wrap: wrap;
+    width: 100%;
+    transition: background-color 0.4s ease-in-out;
+    scroll-behavior: smooth;
+    /* margin-top:2%; */
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    list-style: none;
+    left: 3%;
+    position: fixed;
+    left: 55%;
+    font-size: 1.2rem;
+}
+.logo{
+    width: 10%;
+    cursor: pointer;
+    z-index: 999;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.4s ease-in-out;
+}
+nav ul li a:hover{
+    color:#14bf98;
+}
+nav ul li i{
+    cursor: pointer;
+}
+nav ul li i:hover{
+    color:#14bf98;
+} 
+nav .show{
+    display: none;
+}
+
+ @media (max-width:1024px){
+    nav ul{
+        left: 34%;
+    }
+    nav .show{
+        display: block;
+    }
+ }
+ @media (max-width:768px){
+   nav ul .hideOnMobile{
+    display: none;
+   }
+   nav ul{
+    left:80%;
+   }
+ }
+ @media (max-width:500px){
+    nav ul{
+        left: 65%;
+    }
+    nav .logo{
+        width: 25%;
+    }
+ }

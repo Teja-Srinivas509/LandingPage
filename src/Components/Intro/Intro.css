@@ -1,0 +1,188 @@
+.Intro{
+    padding:1rem 19rem;
+}
+.Intro .content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap:50px;
+}
+.Intro .content .text{
+    flex-shrink: 0;
+    width: 50%;
+}
+.Intro .content h3{
+    font-size: 2.0rem;
+    font-weight: bolder;
+    color:#484a46;
+    margin-top:2%;
+}
+
+.Intro .content p{
+    color: #787976;
+    margin: 3px;
+    font-size: 1.0rem;
+}
+.Intro .content .italic{
+    font-style: italic;
+}
+.Intro .content .section-title{
+    color:#14bf98;
+    font-size: 0.78rem;
+}
+.Intro .content .CEO{
+    font-weight: bolder;
+    color: black;
+    font-size: 1.2rem;
+}
+.Intro .content .container{
+    width:53%;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+.Intro .content img{
+    width: 100%;
+    margin: auto;
+    object-fit: cover;
+    border-radius:5px;
+    transition: all 0.3s;
+}
+.Intro .content img:hover{
+     transform: scale(1.2);
+}
+.skill-list-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top:5rem;
+}
+.skill-list-container .skill-items{
+    width:30%;
+}
+.skill-list-container .skill-items h3{
+    font-weight: bolder;
+    font-size: 1.8rem;
+}
+.skill-list-container .skill-items p{
+    font-size: 1rem;
+    color: #787976;
+}
+.skill-list-container .skill-items img{
+    width: 38%;
+    position: relative;
+}
+.skill-list-container .skill-items span,i{
+    position: absolute;
+    font-weight: 900;
+    font-size: 1.6rem;
+}
+.skill-list-container .skill-items #icon1{
+    left: -4.1rem;
+    top: 2rem;
+}
+.skill-list-container .skill-items #icon2{
+    left: -4rem;
+    top: 2rem;
+}
+.skill-list-container .skill-items #icon3{
+    left: -4rem;
+    top: 2rem;
+}
+
+@media (max-width:1024px){
+    .Intro{
+        padding:1rem 2rem;
+    }
+    .skill-list-container {
+        justify-content: flex-end;
+        margin-left: 5%;
+    }
+    .Intro .content .container{
+        margin-left:-9%;
+    }
+}
+@media (max-width:768px){
+    .Intro .content p{
+        max-width: 100%;
+    }
+    .Intro {
+        padding: 2rem 1rem;
+    }
+    .Intro .content .text{
+        width: 100%;
+    }
+    .Intro .content{
+        display: block;
+    }
+    .Intro .content img {
+        width: 75%;
+    }
+    .skill-list-container {
+        display: block;
+        margin-left: 5%;
+    }
+    .skill-items p{
+        max-width: 100%;
+    }
+    .skill-list-container .skill-items{
+        margin:0 auto;
+        width:50%;
+    }
+    .skill-list-container .skill-items #icon1{
+        left: -5.4rem;
+    top: 2rem;
+    font-size: 2.5rem;
+    }
+    .skill-list-container .skill-items #icon2{
+        left: -5.5rem;
+        top: 2rem;
+        font-size: 2.5rem;
+    }
+    .skill-list-container .skill-items #icon3{
+        left: -5.5rem;
+        top: 2rem;
+        font-size: 2.5rem;
+    }
+    .Intro .content .container{
+        width:80%;
+        margin:10px auto;
+    }
+}
+@media (max-width:500px){
+    .Intro .content{
+        display: block;
+    }
+    .Intro .content .text{
+        width: 100%;
+    }
+    .Intro .content .container {
+        width: 100%;
+        margin: 9px auto;
+    }
+    .skill-list-container{
+        margin-left: 5%;
+    }
+    .skill-list-container .skill-items img {
+        width: 50%;
+    }
+    .skill-list-container .skill-items {
+        width: 100%;
+    }
+    .skill-list-container .skill-items #icon1 {
+        left: -7.3rem;
+        top: 3rem;
+        font-size: 3rem;
+    }
+    .skill-list-container .skill-items #icon2 {
+        left: -7.3rem;
+        top: 3rem;
+        font-size: 3rem;
+    }
+    .skill-list-container .skill-items #icon3 {
+        left: -7.3rem;
+        top: 3rem;
+        font-size: 3rem;
+    }
+}

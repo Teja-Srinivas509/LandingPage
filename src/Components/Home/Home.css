@@ -1,0 +1,42 @@
+.Home{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),url('../../assets/header-background.jpg');
+    background-size:cover ;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.content{
+    margin-top: 2%;
+}
+.Home h1{
+    color: #dfe5ec;
+    font-size: 3.2rem;
+    margin-bottom: 1%;
+    text-transform: uppercase;
+}
+.Home p{
+    color: #dfe5ec;
+    font-size: 1.2rem;
+    max-width: 65%;
+    margin:0 auto;
+    margin-bottom: 2%;
+}
+.Home button{
+    background-color: #14bf98;
+    border: none;
+    border-radius: 5%;
+    padding: 0.87rem 2.5rem 0.8rem 2.5rem;
+    font-size: 1.2rem;
+    color:#fff;
+    cursor: pointer;
+    transition: all 0.125s ease-in-out;
+
+}
+button:hover{
+    background-color: transparent;
+    color: #14bf98;
+    border: 1px solid #14bf98;
+}

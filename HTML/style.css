@@ -1,0 +1,26 @@
+:root{
+    --background-color:#FBFBFB;
+    --green-background:#153E52;
+    --dark-green-color:#113448;
+    --light-green-color:#14BF98;
+    --dark-grey-color:#484A46;
+    --light-grey-color:#787976;
+    --white:#FFFFFF;
+    --disabled-color:#E9ECEF;
+    --dark-white-color:#DFE5EC;
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background-color);
+  }
+  .home{
+    background-image: url('../src/assets/header-background.jpg');
+    background-size: cover;
+    min-height: 90vh;
+}
+

@@ -1,0 +1,134 @@
+.CallMe{
+    padding: 3rem 12vw;
+    background-color: #153e52;
+    /* height: 85vh; */
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+.CallMe .content, .CallMe .form{
+    color: white;
+    width: 48%;
+}
+.CallMe .content .section-title{
+    color: #14bf98;
+}
+.CallMe .content h3{
+    font-size: 2rem;
+    max-width: 85%;
+}
+.CallMe .content p{
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    max-width: 65%;
+    margin-bottom: 4%;
+    color: #dfe5ec;
+}
+.CallMe .content ul{
+    list-style: none;
+    padding-left: 3%;
+    color: #dfe5ec;
+}
+.CallMe .content ul li{
+    line-height: 158%;
+    list-style-type: square;
+    font-size: 1.2rem;
+}
+.CallMe .content ul li::marker{
+    color:#14bf98;
+    font-size: 2.2rem;
+}
+.form{
+    color: white;
+}
+.form input{
+    margin-bottom: 0.625rem;
+    border: 1px solid #39728f;
+    background-color: #2a5d77;
+    color: #fff;
+    flex-grow: 1;
+    padding: 0.65rem 1.5rem;
+    margin-bottom: 6%;
+    border-radius: 0.25rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+.CallMe form ::placeholder{
+    color: #fff;
+}
+form input:focus{
+    outline:1px solid #14bf98 
+}
+form select{
+    margin-bottom: 0.625rem;
+    border: 1px solid #39728f;
+    background-color: #2a5d77;
+    color: #fff;
+    flex-grow: 1;
+    padding: 0.65rem 1.5rem;
+    margin-bottom: 6%;
+    border-radius: 0.25rem;
+}
+form select:focus{
+    outline:1px solid #14bf98
+}
+form button{
+    background-color: transparent;
+    color: #14bf98;
+    display: inline-block;
+    width: 100%;
+    height: 3.125rem;
+    border: 0.125rem solid #14bf98;
+    border-radius: 0.25rem;
+    background-color: #14bf98;
+    color: #fff;
+    font: 700 0.75rem / 1.75rem "Montserrat", sans-serif;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: uppercase;
+}
+@media (min-width:1024px){
+    .CallMe{
+        padding: 3rem 4vw;
+    }
+}
+@media (max-width:768px){
+    .CallMe{
+        padding: 3rem 4vw;
+    }
+    form{
+        width:100%;
+    }
+    .CallMe .content ul li::marker{
+        font-size: 1.5rem;
+    }
+    .CallMe .content ul li{
+        font-size: 0.8rem;
+    }
+    .CallMe .content p{
+        max-width: 100%;
+        font-size: 0.8rem;
+    }
+    .CallMe .content h3{
+        max-width: 100%;
+        font-size: 1rem;
+    }
+}
+@media (max-width:500px){
+    .CallMe .content, .CallMe .form{
+        width:99%;
+    }
+    .CallMe{
+        display: block;
+    }
+    .CallMe .content{
+        margin-left:3%;
+    }
+    
+}
